@@ -1,0 +1,67 @@
+/* Container for the entire form */
+.form-container {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+  
+  /* Style for each form field */
+  .form-field {
+    margin-bottom: 20px;
+  }
+  
+  /* Label styling */
+  .form-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Textarea and input field styling */
+  .form-field textarea, .form-field input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Textarea specific styling */
+  .form-field textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  /* Style for the submit button */
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Hover effect for button */
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .form-container {
+      width: 90%;
+      margin: 20px auto;
+    }
+  
+    .form-field textarea, .form-field input[type="text"] {
+      padding: 8px;
+    }
+  }
+  
