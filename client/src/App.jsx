@@ -39,7 +39,7 @@ function App() {
         </p>
       </div>
 
-      {/* Additional Info */}
+      {/*  */}
       <p className="read-the-docs">
         Created by Ziaul Chowdhury
       </p>
