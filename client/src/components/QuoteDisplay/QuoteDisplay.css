@@ -8,7 +8,8 @@
   .quote-text {
     font-style: italic;
     color: #555;
-    margin-bottom: 10px; /* Add some space below the quote text */
+    margin-bottom: 20px; /* Add some space below the quote text */
+    margin-right: 10px;
     text-align: left; 
   }
   
