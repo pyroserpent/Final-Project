@@ -21,9 +21,10 @@ app.get('/quote', (req, res) => {
 app.post('/quote', (req, res) => {
   const newQuote = req.body;
   quotes.unshift(newQuote); // Add new quote to the beginning of the array
-  res.status(201).send('Quote added successfully');
-});
 
+  // Send a JSON response
+  res.status(201).json({ message: 'Quote added successfully', newQuote });
+});
 // Get All Submitted Quotes
 app.get('/quotes', (req, res) => {
   res.json(quotes);
