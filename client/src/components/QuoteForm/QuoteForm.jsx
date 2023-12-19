@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
 import './QuoteForm.css';
 
-
-const QuoteForm = () => {
+const QuoteForm = ({ onNewQuote }) => {
   const [quote, setQuote] = useState('');
   const [author, setAuthor] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // POST request to the server with the new quote
     fetch('http://localhost:3001/quote', {
       method: 'POST',
       headers: {
@@ -20,7 +18,7 @@ const QuoteForm = () => {
     .then(response => response.json())
     .then(data => {
       alert('Quote submitted successfully!');
-      // Reset the form fields
+      onNewQuote({ quote, author }); // Update the parent component's state
       setQuote('');
       setAuthor('');
     })
