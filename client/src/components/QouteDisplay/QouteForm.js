@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import './QuoteForm.css';
+
 
 const QuoteForm = () => {
   const [quote, setQuote] = useState('');
