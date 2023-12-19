@@ -41,7 +41,7 @@ function App() {
 
       {/* Additional Info */}
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        Created by Ziaul Chowdhury
       </p>
 
       {/* Quote Display and Form Components */}

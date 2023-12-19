@@ -8,10 +8,13 @@
   .quote-text {
     font-style: italic;
     color: #555;
+    margin-bottom: 10px; /* Add some space below the quote text */
+    text-align: left; 
   }
   
   .quote-author {
     margin-top: 10px;
     font-weight: bold;
+    text-align: right;
   }
   
