@@ -18,7 +18,8 @@ const QuoteForm = ({ onNewQuote }) => {
     .then(response => response.json())
     .then(data => {
       alert('Quote submitted successfully!');
-      onNewQuote({ quote, author }); // Update the parent component's state
+      console.log("Submitting quote:", { quote, author });
+      onNewQuote({ quote, author });
       setQuote('');
       setAuthor('');
     })

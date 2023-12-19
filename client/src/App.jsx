@@ -10,6 +10,7 @@ function App() {
   const [currentQuote, setCurrentQuote] = useState({ quote: '', author: '' });
 
   const handleNewQuote = (newQuote) => {
+    console.log("New quote received in App:", newQuote);
     setCurrentQuote(newQuote);
   };
 
