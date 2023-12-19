@@ -7,6 +7,11 @@ import QuoteForm from './components/QuoteForm/QuoteForm';
 
 function App() {
   const [count, setCount] = useState(0);
+  const [currentQuote, setCurrentQuote] = useState({ quote: '', author: '' });
+
+  const handleNewQuote = (newQuote) => {
+    setCurrentQuote(newQuote);
+  };
 
   return (
     <>
@@ -39,8 +44,8 @@ function App() {
       </p>
 
       {/* Quote Display and Form Components */}
-      <QuoteDisplay />
-      <QuoteForm />
+      <QuoteDisplay quote={currentQuote.quote} author={currentQuote.author} />
+      <QuoteForm onNewQuote={handleNewQuote} />
     </>
   );
 }
