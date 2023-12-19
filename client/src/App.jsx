@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import QuoteDisplay from './components/QuoteDisplay/QuoteDisplay';
+import QuoteForm from './components/QuoteForm'; // Adjust the path as necessary
+
 
 function App() {
   const [count, setCount] = useState(0)
